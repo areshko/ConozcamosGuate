@@ -1,0 +1,13 @@
+{% block titulo %} Agregue un evento nuevo {% endblock titulo %}
+
+
+{% block contenido %}
+<form method="POST">{% csrf_token %}
+
+{{ formulario }}
+
+<input type="submit" value="Enviar" />
+
+</form>
+
+{% endblock contenido %}

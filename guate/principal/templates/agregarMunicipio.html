@@ -1,0 +1,13 @@
+{% block titulo %} Insertar un nuevo Municipio {% endblock titulo %}
+
+
+{% block contenido %}
+<form method="POST">{% csrf_token %}
+
+{{ formulario }}
+
+<input type="submit" value="Enviar" />
+
+</form>
+
+{% endblock contenido %}

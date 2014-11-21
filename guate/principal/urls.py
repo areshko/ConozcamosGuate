@@ -4,12 +4,12 @@ from django.conf.urls.defaults import *
 from principal.views import archive
 from principal.views import archiveDepartamentos
 from principal.views import *
+from django.conf.urls import url 
 
 urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'codigofacilito.views.home', name='home'),
-    url(r'^$', archiveMunicipios),
     url(r'^$', archive),
-    url(r'^hola/$', archiveDepartamentos),
-    
+    url(r'^$', archiveMunicipios),
+    url(r'^hola/$', archiveDepartamentos),   
 )

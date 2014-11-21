@@ -1,6 +1,6 @@
 {% if departamento1 %}
 	<P>Departamentos de Guatemala</p>
+	{% for departamento1 in departamento1 %}
+		<p>{{departamento1.nombreDepartamento}}</p>
+	{% endfor %}
 {% endif %}
-{% for departamento1 in departamento1 %}
-<p>{{departamento1.nombredepartamento}}</p>
-{% endfor %}
